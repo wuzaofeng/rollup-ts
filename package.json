@@ -1,0 +1,28 @@
+{
+  "name": "frame-ts2",
+  "version": "1.0.5",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist/",
+    "build": "npm run clean && rollup -c build/rollup.config.js",
+    "dev": "npm run clean && rollup -w -c build/rollup.config.js",
+    "eslint": "eslint src/index.ts"
+  },
+  "keywords": [],
+  "author": "wuzaofeng",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^1.17.0",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.22.1",
+    "rollup-plugin-uglify": "^6.0.2",
+    "typescript": "^3.5.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {}
+}
